@@ -39,7 +39,7 @@ public class insertarDatos {
                 collection.insertOne(document);
                 System.out.println("Documento insertado");
 
-                JFrame salIns = new JFrame("Datos ingresados correctamente");
+                JFrame salIns = new JFrame("Mensaje");
                 JOptionPane.showMessageDialog(salIns, "Datos ingresados correctamente");
 
 
@@ -59,6 +59,8 @@ public class insertarDatos {
                 Document update = new Document("$set", caliMod);
                 collection.updateOne(modificado,update);
                 System.out.println("Documento actualizado!");
+                JFrame salIns = new JFrame("Mensaje");
+                JOptionPane.showMessageDialog(salIns, "Datos actualizados correctamente");
 
             }
         });
